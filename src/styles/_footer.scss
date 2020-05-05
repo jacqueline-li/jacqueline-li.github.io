@@ -9,9 +9,9 @@
   a {
     text-decoration: none;
     margin: 0;
-    color: $main;
+    color: $iconhover;
     &:hover{
-      color: $sec;
+      color: $main;
     }
     &:active {
       color: $sec;
