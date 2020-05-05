@@ -1,0 +1,137 @@
+#particles-js {
+  background-image: $black-gradient;
+  display: flex;
+  vertical-align: bottom;
+  width: 100%;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  .particles-js-canvas-el {
+    width:100% !important;
+    height:100vh !important;
+  }
+}
+
+.section {
+  h1 {
+    margin-bottom: 25px;
+  }
+}
+
+.header {
+  a {
+    color: transparent !important;
+  }
+  z-index: 1;
+  text-align: center;
+  color:#FFF;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0 auto;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  .site-title {
+    font-size: 50px;
+    display: block;
+    line-height: 1;
+    color: #FFF;
+    @media only screen and (min-width:$cut){
+      margin: 0;
+      font-size: 76px;
+    }
+  }
+  .site-description {
+    font-size: 20px;
+    display: block;
+    line-height: 1;
+    color: #FFF;
+    margin-top: 10px;
+    @media only screen and (min-width:$cut){
+      font-size: 34px;
+    }
+  }
+}
+
+.header-links {
+  margin: 10px;
+  .link {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 15px;
+    margin: 10px;
+    @media only screen and (min-width:$cut){
+      font-size: 20px;
+    }
+  }
+}
+
+.header-icons {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 25px;
+  .icon {
+    text-align: center !important;
+    color: #FFF !important;
+    width: 45px !important;
+    height: 45px !important;
+    font-size: 20px !important;
+    padding: 10px !important;
+    margin: 5px !important;
+    border-radius: 50% !important;
+    border: 2px solid #FFF !important;
+    transition: all .7s !important;
+    &:hover {
+      color: $iconhover !important;
+      background: #FFF !important;
+    }
+    &:active {
+      color: $iconhover !important;
+      background: #FFF !important;
+    }
+  }
+}
+
+@media only screen and (min-width:$cut) {
+  .header-icons .icon {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 60px !important;
+    height: 57px !important;
+    font-size: 30px !important;
+  }
+}
+
+.down {
+  color: #FFF;
+  display: block;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom: -20px;
+  margin: 0 auto;
+  font-size: 30px;
+  cursor: pointer;
+  .icon {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    fill: #fff;
+    -webkit-animation: pulse 1.3s infinite;
+    animation: pulse 1.3s infinite;
+    &:hover {
+      color: $sec;
+    }
+    &:active {
+      color: $sec;
+    }
+  }
+}

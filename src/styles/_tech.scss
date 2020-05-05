@@ -1,0 +1,92 @@
+#tech {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 960px;
+    margin: 20px auto;
+    align-items: center;
+    @media only screen and (max-width: $md) {
+      width: 90%;
+    }
+    .skills {
+      text-align: center;
+      font-size: 60px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      p {
+        font-size: 16px;
+      }
+      @media only screen and (max-width: $md) {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        .tech {
+          width: 90%;
+        }
+      }
+      .flipper {
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-bottom: 10px;
+        perspective: 1000px;
+      }
+      /* flip the pane when hovered */
+      .flipper.flip .card {
+        transform: rotateY(180deg);
+      }
+      .front,
+      .back {
+        width: 100%;
+        padding: 5px;
+        backface-visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      /* front pane, placed above back */
+      .front {
+        z-index: 2;
+        /* for firefox 31 */
+        transform: rotateY(0deg);
+        height: 100%;
+      }
+      /* back, initially hidden pane */
+      .back {
+        transform: rotateY(180deg);
+        height: 100%;
+      }
+      .goback {
+        position: absolute;
+        bottom: 0px;
+        padding-left: 20px;
+        left: 0px;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+  
+    .tech {
+      .skills-desc {
+        margin-top: 15px;
+        text-align: left;
+      }
+      border: 1px solid $border;
+      border-radius: $rounded-borders;
+      padding: 15px;
+      margin: 10px;
+      width: 30%;
+      transition: transform 400ms;
+  
+      &:hover:not(.post) {
+        transform: translateY(-8px);
+        box-shadow: -2px 8px 40px -12px rgba(0, 0, 0, 0.24);
+      }
+      .icon {
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }

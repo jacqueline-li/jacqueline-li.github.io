@@ -1,0 +1,26 @@
+# Site settings
+title: Jacqueline Li
+description: My personal website
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+
+# User settings
+username: Jacqueline Li
+user_description: |- 
+  My name is Jacqueline and I’m currently a computer science student at the University of Waterloo. I'm passionate about software development, learning new things, and bringing people together. 
+  
+  At my previous internships, I’ve helped develop 800+ microservices to automate accountant and book-keeper tasks using Javascript libraries and created websites which attracted over $50000 in cancer research funding using ReactJS. Being able to help people and ultimately make things better is what drives me as a software developer. 
+  
+  I’m currently looking for SWE or PM internship opportunities for Fall/Winter 2020. 
+  If you know of any cool opportunities or would like to chat, please shoot me a message!
+user_title: Welcome to my website.
+email: jacquelineli1005@gmail.com
+#twitter_username: lorem_ipsum
+github_username:  jacqueline-li
+#gplus_username:  lorem_ipsum
+
+# Google-analytics
+google-analytics:
+  id: ""
+
+exclude: ['package.json', 'src' , 'node_modules']

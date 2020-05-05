@@ -1,0 +1,12 @@
+.navbar {
+    a {
+        color: white !important;
+    }
+    &.solid-nav {
+        a {
+            color: $main !important;
+        }
+        background-color: #f8f9fa;
+        transition: background-color 0.2s linear;
+    }
+}
