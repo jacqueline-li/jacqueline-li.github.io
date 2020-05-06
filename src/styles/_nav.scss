@@ -2,10 +2,22 @@
     background-color: black;
     a {
         color: white !important;
+        &:hover {
+            color: $linkactive !important;
+        }
+        &:active {
+            color: $linkactive !important;
+        }
     }
     &.solid-nav {
         a {
             color: $main !important;
+            &:hover {
+                color: $linkactive !important;
+            }
+            &:active {
+                color: $linkactive !important;
+            }
         }
         background-color: #f8f9fa;
         transition: background-color 0.2s linear;

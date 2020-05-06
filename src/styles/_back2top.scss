@@ -1,0 +1,51 @@
+#button {
+    display: inline-block;
+    border: 0px solid white;
+    background-color: $iconhover;
+    margin-bottom: 50px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+#button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+}
+#button:focus {
+    outline: 0;
+    box-shadow: 0 0 10px $linkactive;
+}
+#button:hover {
+    cursor: pointer;
+    background-color: $linkactive;
+}
+#button:active {
+    background-color: $linkactive;
+}
+#button.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+@media only screen and (max-width: $md) {
+    #button {
+        width: 45px;
+        height: 45px;
+        bottom: 20px;
+        right: 20px;
+    }
+}

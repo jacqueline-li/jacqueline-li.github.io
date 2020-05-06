@@ -1,0 +1,26 @@
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 960px;
+  margin: 20px auto;
+  align-items: center;
+  @media only screen and (max-width: $md) {
+    width: 90%;
+  }
+  #submit-center {
+    text-align: center !important;
+    margin: 10px;
+    p {
+      margin-top: 5px;
+    }
+    input:hover {
+      cursor: pointer;
+      background-color: $linkactive !important;
+    }
+    input:active {
+      background-color: $linkactive !important;
+    }
+  }
+}

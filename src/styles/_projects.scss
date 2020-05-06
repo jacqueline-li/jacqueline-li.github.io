@@ -39,6 +39,14 @@
 .card-link {
   color: $iconhover !important;
   margin: 0 !important;
+  &:hover {
+    color: $linkactive !important;
+    background: #FFF !important;
+  }
+  &:active {
+    color: $linkactive !important;
+    background: #FFF !important;
+  }
 }
 
 .card {

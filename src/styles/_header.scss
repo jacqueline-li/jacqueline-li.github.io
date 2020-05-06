@@ -22,6 +22,12 @@
 .header {
   a {
     color: transparent !important;
+    &:hover {
+      color: transparent !important;
+    }
+    &:active {
+      color: transparent !important;
+    }
   }
   z-index: 1;
   text-align: center;
@@ -106,7 +112,7 @@
 }
 
 .down {
-  color: #FFF;
+  color: #FFF !important;
   display: block;
   position: absolute;
   text-align: center;
@@ -128,10 +134,10 @@
     -webkit-animation: pulse 1.3s infinite;
     animation: pulse 1.3s infinite;
     &:hover {
-      color: $sec;
+      color: $sec !important;
     }
     &:active {
-      color: $sec;
+      color: $sec !important;
     }
   }
 }
