@@ -1,4 +1,40 @@
+// #contact {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
+//   width: 100%;
+//   max-width: 960px;
+//   margin: 20px auto;
+//   align-items: center;
+//   @media only screen and (max-width: $md) {
+//     width: 90%;
+//   }
+//   #submit-center {
+//     text-align: center !important;
+//     margin: 10px;
+//     p {
+//       margin-top: 5px;
+//     }
+//     input:hover {
+//       cursor: pointer;
+//       background-color: $linkactive !important;
+//     }
+//     input:active {
+//       background-color: $linkactive !important;
+//     }
+//   }
+// }
+
 #contact {
+  a {
+    color: transparent !important;
+    &:hover {
+      color: transparent !important;
+    }
+    &:active {
+      color: transparent !important;
+    }
+  }
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -9,18 +45,44 @@
   @media only screen and (max-width: $md) {
     width: 90%;
   }
-  #submit-center {
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 25px;
+  .icon {
     text-align: center !important;
-    margin: 10px;
-    p {
-      margin-top: 5px;
+    color: black !important;
+    width: 60px !important;
+    height: 57px !important;
+    font-size: 30px !important;
+    padding: 10px !important;
+    margin: 5px !important;
+    border-radius: 50% !important;
+    border: 2px solid black !important;
+    transition: all .5s !important;
+    &:hover {
+      color: $iconhover !important;
+      background: white !important;
+      border: 2px solid $iconhover !important;
     }
-    input:hover {
-      cursor: pointer;
-      background-color: $linkactive !important;
+    &:active {
+      color: $iconhover !important;
+      background: white !important;
+      border: 2px solid $iconhover !important;
     }
-    input:active {
-      background-color: $linkactive !important;
-    }
+  }
+}
+
+@media only screen and (min-width:$cut) {
+  .contact-icons .icon {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 60px !important;
+    height: 57px !important;
+    font-size: 30px !important;
   }
 }
