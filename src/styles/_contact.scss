@@ -54,14 +54,14 @@
   margin-top: 25px;
   .icon {
     text-align: center !important;
-    color: black !important;
+    color: $darkborder !important;
     width: 60px !important;
     height: 57px !important;
     font-size: 30px !important;
     padding: 10px !important;
     margin: 5px !important;
     border-radius: 50% !important;
-    border: 2px solid black !important;
+    border: 2px solid $darkborder !important;
     transition: all .5s !important;
     &:hover {
       color: $iconhover !important;
