@@ -24,7 +24,9 @@
     font-size: 2em;
     line-height: 50px;
     color: #fff;
+    text-align: center;
     @media only screen and (max-width: $md) {
+        text-align: center;
         font-size: 1.5em;
         line-height: 30px;
     }
