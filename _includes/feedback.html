@@ -1,0 +1,51 @@
+<div id="feedback">
+    <div class="section">
+      <h1> Feedback ✅</h1>
+    </div>
+    <div class="tech wow animated fadeIn" data-wow-delay=".15s">
+    <div class="container">
+    <div class='row'>
+        <div>
+        <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+            <!-- Bottom Carousel Indicators -->
+            <ol class="carousel-indicators">
+            <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#quote-carousel" data-slide-to="1"></li>
+            </ol>
+            
+            <!-- Carousel Slides / Quotes -->
+            <div class="carousel-inner">
+            
+            <!-- Quote 1 -->
+            <div class="item active">
+                <blockquote>
+                <div class="row">
+                    <div class="center-text">
+                    <p> {{site.feedback_xero | markdownify }} </p>
+                    <p><strong> - Mike Atlin, Software Development Manager at Xero Canada </strong></p>
+                    </div>
+                </div>
+                </blockquote>
+            </div>
+            <!-- Quote 2 -->
+            <div class="item">
+                <blockquote>
+                <div class="row">
+                    <div class="center-text">
+                    <p> {{site.feedback_oicr | markdownify }} </p>
+                    <p><strong> - Joseph Yamada, Senior Manager of Web Development at Ontario Institue of Cancer Research </strong></p>
+                    </div>
+                </div>
+                </blockquote>
+            </div>
+            </div>
+            
+            <!-- Carousel Buttons Next/Prev -->
+            <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
+            <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
+        </div>                          
+        </div>
+    </div>
+    </div>
+    </div>
+</div>
