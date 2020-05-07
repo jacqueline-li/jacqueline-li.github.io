@@ -73,8 +73,8 @@
   .carousel-inner > .item {
     display: none;
     position: relative;
-    -webkit-transition: 15s ease-in-out left;
-    transition: 15s ease-in-out left;
+    -webkit-transition: 0.7s ease-in-out left;
+    transition: 0.7s ease-in-out left;
   }
   .carousel-inner > .active,
   .carousel-inner > .next,
