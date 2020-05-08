@@ -35,12 +35,26 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  margin: 0 auto;
+  margin: 0;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   .site-title {
-    font-size: 50px;
-    display: block;
+    font-size: 70px !important;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    line-height: 1;
+    color: #FFF;
+    @media only screen and (min-width:$cut){
+      margin: 0;
+      font-size: 70px;
+    }
+  }
+  .site-icon {
+    font-size: 76px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
     line-height: 1;
     color: #FFF;
     @media only screen and (min-width:$cut){
