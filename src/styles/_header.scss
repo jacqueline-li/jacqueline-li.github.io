@@ -46,7 +46,7 @@
     white-space: nowrap;
     overflow: hidden;
     white-space: nowrap;
-    @media only screen and (min-width:$cut){
+    @media only screen and (min-width:$sm){
       font-size: 76px !important;
     }
   }
