@@ -7,7 +7,7 @@ url: "localhost:3000" # the base hostname & protocol for your site e.g. http://w
 # User settings
 username: Jacqueline Li
 user_description: |- 
-  Hi, my name is Jacqueline and I’m currently a computer science student at the University of Waterloo. I’m passionate about software development, learning new things, and bringing people together.
+  My name is Jacqueline and I’m currently a computer science student at the University of Waterloo. I’m passionate about software development, learning new things, and bringing people together.
 
   At my previous engineering internships, I’ve helped develop 800+ microservices to automate accountant and book-keeper tasks using Javascript libraries. I’ve also created websites that have attracted over $50,000 in cancer research funding. Being able to make impact and ultimately help people is what drives my work. 
   
