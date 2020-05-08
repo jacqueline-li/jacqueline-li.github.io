@@ -44,9 +44,9 @@
     line-height: 1;
     color: #FFF;
     white-space: nowrap;
-    overflow: hidden;
-    white-space: nowrap;
     @media only screen and (min-width:$sm){
+      overflow: hidden;
+      white-space: nowrap;
       font-size: 76px !important;
     }
   }
