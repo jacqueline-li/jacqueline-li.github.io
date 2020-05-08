@@ -39,15 +39,15 @@
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   .site-title {
-    font-size: 70px !important;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
+    font-size: 50px;
+    margin: 0;
     line-height: 1;
     color: #FFF;
+    white-space: nowrap;
+    overflow: hidden;
+    white-space: nowrap;
     @media only screen and (min-width:$cut){
-      margin: 0;
-      font-size: 70px;
+      font-size: 76px !important;
     }
   }
   .site-icon {
